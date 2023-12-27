@@ -4,7 +4,7 @@ const buyButtons = document.querySelectorAll('.buyNowBtn');
 
 // Function to fetch products from the backend
 function fetchProducts() {
-  fetch('http://localhost:3000/api/products')
+  fetch('https://ecommerce-ayq4.onrender.com/api/products')
     .then(response => response.json())
     .then(data => {
       data.products.forEach(product => {
